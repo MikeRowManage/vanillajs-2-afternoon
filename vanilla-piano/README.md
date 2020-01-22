@@ -8,7 +8,7 @@ The goal of this project is to build a functional piano that can be played using
 
 ### Summary
 
-Begin by examining the exisiting code. You'll notice that our piano is a Scalable Vector Graphic (SVG); you can find more information on SVG's <a href="https://www.w3schools.com/graphics/svg_intro.asp">here</a>.
+Begin by examining the existing code. You'll notice that our piano is a Scalable Vector Graphic (SVG); you can find more information on SVG's <a href="https://www.w3schools.com/graphics/svg_intro.asp">here</a>.
 
 ### Instructions
 
@@ -120,7 +120,7 @@ In this step we'll get our piano to play a note when we press one of the valid k
 
 ```js
 window.addEventListener("keypress", function(keyPressEvent) {
-  const tone = document.querySelector(`audio[data-key="${keyPressEvent.keyCode}"]`);
+  const tone = document.querySelector(`audio[data-key="${keyPressEvent.keyCode}"]`)
   if (!tone) return;
   const pianoKey = document.querySelector(`.pianoKey[data-key="${keyPressEvent.keyCode}"]`);
   tone.currentTime = 0;
